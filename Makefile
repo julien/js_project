@@ -5,7 +5,7 @@ HTML_DST = build/index.html
 JS_SRC = $(shell find js -type f -name '*.js')
 JS_DST = build/app.min.js 
 
-all: clean lint $(JS_DST) $(HTML_DST)
+all: clean $(JS_DST) $(HTML_DST)
 
 $(JS_DST): $(JS_SRC)
 	$(lint)
